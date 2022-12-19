@@ -4,3 +4,19 @@
   justify-content: center;
   margin-top: 15px;
 }
+
+/*  */
+.activity-container:nth-child(3n + 1){
+  background-color: #1b1b32;
+
+}
+
+.activity-container:nth-child(3n + 2){
+  background-color: #2a2a40;
+  
+}
+
+.activity-container:nth-child(3n + 3){
+  background-color: #3b3b4f;
+  
+}

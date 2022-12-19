@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './index.css'
+import {v4 as uuidv4} from 'uuid'
 
 function FormActivity(props) {
 
@@ -10,10 +11,15 @@ function FormActivity(props) {
   }
 
   const handleSend = a => {
+    a.preventDefault();
+
     const newActivity = {
-      id: '222',
-      text: 'Hola'
-    }
+      id: uuidv4(),
+      text: input,
+      completed: false
+    };
+
+    props.onSubmit(newActivity)
   }
 
   return (
