@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { ActivityList } from './components/ActivityList';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       </h1>
       <div className='main-container'>
         <h2>My activities</h2>
-        
+        <ActivityList />
       </div>
     </div>
   );
